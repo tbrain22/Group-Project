@@ -1,0 +1,11 @@
+{
+  "image": "ghcr.io/rocker-org/devcontainer/tidyverse:4.4",
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/rstudio-server:1": {}
+  },
+  "forwardPorts": [8787],
+  "portsAttributes": {
+    "8787": { "label": "RStudio", "onAutoForward": "openBrowser" }
+  },
+  "postAttachCommand": "rserver"
+}
